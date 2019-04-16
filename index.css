@@ -1,0 +1,368 @@
+/*CSS pour toutes les pages html*/
+/*GENERAL*/
+@font-face {
+ font-family: 'kaushan_scriptregular';
+    src: url('polices/kaushanscript-regular-webfont.eot');
+    src: url('polices/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('polices/kaushanscript-regular-webfont.woff') format('woff'),
+         url('polices/kaushanscript-regular-webfont.ttf') format('truetype'),
+         url('polices/kaushanscript-regular-webfont.svg#kaushan_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rounded_eleganceregular';
+    src: url('polices/rounded_elegance-webfont.eot');
+    src: url('polices/rounded_elegance-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/rounded_elegance-webfont.woff2') format('woff2'),
+         url('polices/rounded_elegance-webfont.woff') format('woff'),
+         url('polices/rounded_elegance-webfont.ttf') format('truetype'),
+         url('polices/rounded_elegance-webfont.svg#rounded_eleganceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background: rgb(176,196,222);
+    margin: 40px auto 0 auto;
+}
+@media all and (max-width: 1000px)
+{
+    body{
+        width: auto;
+    }
+}
+
+/*HEADER*/
+
+header
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+}
+h1
+{
+    font-family: 'kaushan_scriptregular';
+    margin-right: 50px;
+    margin-left: 3%;
+    
+}
+#ac
+{
+    font-size: 2.5em;
+    text-shadow: 5px 5px 4px rgba(6, 33, 56, 0.5);
+    color: black;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+nav li
+{
+    margin-right: 30px;
+    align-self: center;
+}
+nav a
+{
+    text-decoration: none;
+    font-size: 1.8em;
+    color: black;
+    font-family: 'kaushan_scriptregular';
+   
+}
+nav a:hover
+{
+    color:rgba(34, 65, 124, 0.795);
+    border-bottom: 3px solid rgba(34, 65, 124, 0.795);
+}
+
+@media all and (max-width: 1000px)
+{
+
+    h1
+    {
+        font-size: 1.5em;
+    }
+    nav
+    {
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.3em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
+/*PAGE ACCUEIL*/
+/*PHOTO PRINCIPALE*/
+
+#photo
+{
+    position: relative;
+    background: url('Images/paysages/paysage.jpg') no-repeat;
+    width: 959px;
+    height: 540px;
+    margin: 40px auto;
+    border: 1px solid black;
+    border-radius: 40px;
+    
+}
+#banniere
+{
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 50px 50px;
+    width: 99.6%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24, 24, 24, 0.671);
+    color: white;
+    font-size: 0.8em;
+}
+.banniere
+    {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+    }
+@media all and (max-width: 1000px)
+{
+    #photo
+    {
+        background: url('Images/paysages/paysage2.jpg') no-repeat;
+        margin: 40px auto;
+        width: 320px;
+        height: 179px;
+    }
+    #banniere
+    {
+        display: none;
+    }
+} 
+
+/*PAGE ACCUEIL*/
+/*SECTION*/
+
+section
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#description
+{
+    font-family: 'rounded_eleganceregular';
+    font-size: 1.3em;
+    width: 25%;
+    height: 25%;
+    text-align: justify;
+    margin-right: 50px;
+    color: rgba(0, 0, 0, 0.726);
+}
+#description a
+{
+    text-decoration: none;
+    color: black;
+}
+#photographer img
+{
+   border-radius: 100%;
+}
+#photographer p
+{
+    font-family: 'kaushan_scriptregular';
+}
+@media all and (max-width: 1000px)
+{
+    section
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    #description
+    {
+        font-size: 1em;
+        width: 319px;
+        height: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/*ADDRESS*/
+address
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    background: white;
+    font-family: 'kaushan_scriptregular';
+    font-size: 2em;
+    font-style: normal;
+}
+#contact
+{
+    height: 70px;
+    margin-bottom: 20px;
+}
+.mail
+{
+    border-radius: 100%;
+}
+.facebook
+{
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.insta
+{
+    border-radius: 10px;
+}
+#icones
+{
+    margin-bottom: 30px;
+}
+@media all and (max-width: 1000px)
+{
+    address
+    {
+        margin: 20px auto;
+        font-size: 1.5em;
+    }
+    #bandeau
+    {
+        margin-bottom: 10px;
+    }
+}
+
+/*FOOTER*/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright img
+{
+    border-radius: 100%;
+}
+.dev
+{
+   font-size: small;
+}
+
+/*PagePhotos*/
+/*MAIN*/
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+main div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px black solid;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 960px;
+}
+main div a
+{
+    text-decoration: none;
+    font-size: 1.8em;
+    font-family: 'rounded_eleganceregular';
+    color: rgba(255, 255, 255, 0.664);
+}
+.paysages
+{
+    background: url('Images/paysages/Eze.jpg') center;
+}
+.animaux{
+    background: url('Images/animaux/mouette.jpg') center;  
+}
+.portraits
+{
+    background: url('Images/portraits/portrait.jpg') center;
+}
+.voiture
+{
+    background: url('Images/voitures/voiture.jpg') center;
+}
+
+@media all and (max-width: 1000px)
+{
+    main div
+    {
+        width: 320px;
+        height: 179px;
+    }
+    main div a
+    {
+        font-size: 1.5em;
+    }
+}
+
+/*PAGE PAYSAGES*/
+/*PAGE ANIMAUX*/
+/*PAGE PORTRAITS*/
+/*PAGE VOITURES*/
+#paysages, #animaux, #portraits, #voitures
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    margin: 40px auto;
+}
+#paysages img, #animaux img, #portraits img, #voitures img
+{
+    transition: 1s;
+    padding:10px;
+}
+#paysages img:hover, #animaux img:hover, 
+#portraits img:hover,  #voitures img:hover
+{
+    transform: scale(1.2);
+}
+@media all and (max-width: 1000px)
+{
+    #paysages, #animaux, #portraits, #voitures
+    {
+        width: 350px;
+    }
+}
+
