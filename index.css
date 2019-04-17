@@ -147,7 +147,10 @@ nav a:hover
     }
     #banniere
     {
-        display: none;
+      height: 10px;
+      width: 305px;
+      font-size: 0.5em;
+      left: 5px;
     }
 } 
 
@@ -212,6 +215,11 @@ address
     font-family: 'kaushan_scriptregular';
     font-size: 2em;
     font-style: normal;
+}
+.contact
+{
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
 }
 #contact
 {
