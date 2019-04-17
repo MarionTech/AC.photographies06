@@ -40,22 +40,26 @@ body
 header
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     background: white;
 }
 h1
 {
     font-family: 'kaushan_scriptregular';
-    margin-right: 50px;
-    margin-left: 3%;
+    font-size: 3em;
+    text-shadow: 20px 20px 4px rgba(34, 65, 124, 0.301);
     
 }
 #ac
 {
-    font-size: 2.5em;
-    text-shadow: 5px 5px 4px rgba(6, 33, 56, 0.5);
-    color: black;
+    font-size: 3em;
+}
+nav
+{
+    border-top: solid 1px black;
 }
 nav ul
 {
@@ -84,31 +88,14 @@ nav a:hover
 
 @media all and (max-width: 1000px)
 {
-
     h1
     {
         font-size: 1.5em;
     }
-    nav
-    {
-        text-align: left;
-    }
-    
-    nav ul
-    {
-        flex-direction: column;
-    }
-
-    nav li
-    {
-        padding-left: 4px;
-    }
-    
     nav a
     {
         font-size: 1.3em;
     }
-    
     nav a:hover
     {
         border-bottom: 0;
