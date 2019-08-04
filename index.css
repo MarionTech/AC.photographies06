@@ -107,7 +107,7 @@ nav a:hover
 #photo
 {
     position: relative;
-    background: url('Images/paysages/paysage.jpg') no-repeat;
+    background: url('Images/firstPhoto/paysage.jpg') no-repeat;
     width: 959px;
     height: 540px;
     margin: 40px auto;
@@ -140,7 +140,7 @@ nav a:hover
 {
     #photo
     {
-        background: url('Images/paysages/paysage2.jpg') no-repeat;
+        background: url('Images/firstPhoto/paysage2.jpg') no-repeat;
         margin: 40px auto;
         width: 320px;
         height: 179px;
