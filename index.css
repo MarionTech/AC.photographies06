@@ -106,11 +106,16 @@ nav a:hover
 
 .photo
 {
-    position: relative;
-    width: 320px;
+    width: 640px;
     height: 240px;
-    margin: 40px auto;
-    
+    margin: 40px auto;  
+}
+@media all and (max-width: 1000px)
+{
+    .photo
+    {
+        width: 320px;
+    }
 }
 
 /*PAGE ACCUEIL*/
@@ -120,7 +125,7 @@ section
 {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 #description
