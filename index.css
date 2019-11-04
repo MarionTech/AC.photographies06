@@ -106,14 +106,26 @@ nav a:hover
 
 .photo
 {
-    margin:5% 18%; 
+    width: 1000px;
+    margin: 5% auto;
 }
+
+
+@media all and (max-width: 1510px){
+    .photo{
+        width: 640px;
+        margin: 5% auto;
+        padding-left: 0;
+    }
+}
+
 @media all and (max-width: 1000px)
 {
     .photo
     {
         width: 320px;
         margin: 5% auto;
+        padding-left: 0;
     }
 }
 
@@ -150,8 +162,8 @@ section
 {
     font-family: 'kaushan_scriptregular';
 }
-@media all and (max-width: 1000px)
-{
+
+@media all and (max-width: 1000px){
     section
     {
         flex-direction: column;
